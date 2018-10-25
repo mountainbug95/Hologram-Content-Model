@@ -5,7 +5,7 @@
             <header class="major">
                 <h2>{{ include.section.title }}</h2>
             </header>
-            <p>{{ include.section.text }}</p>
+            {{ include.section.text | markdownify }}
         </section>
         <form method="post" action="#">
             <label for="name">Name</label>

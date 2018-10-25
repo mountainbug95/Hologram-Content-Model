@@ -38,5 +38,15 @@ fields:
             name: include_action
             label: Include action
             template: action
+  - type: blocks
+    name: sections
+    label: Sections
+    description: Home Sections
+    template_types:
+      - split
+      - spotlights
+      - features
+      - contact
+      - generic_section
 pages:
   - index.md

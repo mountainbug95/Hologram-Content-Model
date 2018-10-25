@@ -3,6 +3,7 @@ title: Etiam consequat
 content_img_path: images/pic01.jpg
 background_style: style1
 home_spotlights:
+  enabled: true
   weight: 1
   excerpt: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet,

@@ -2,7 +2,7 @@
 <section id="{{ include.section.section_id }}" class="wrapper {{ include.section.background_style }} special alt">
     <div class="inner">
         <h4>{{ include.section.title }}</h4>
-        <p>{{ include.section.text }}</p>
+        {{ include.section.text | markdownify }}
         {% if include.section.actions %}
             <ul class="actions special">
                 {% for action in include.section.actions %}

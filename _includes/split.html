@@ -3,12 +3,12 @@
     <div class="inner">
         <header class="major alt {{ include.section.header_background_style }}">
             <h2>{{ include.section.title }}</h2>
-            <p>{{ include.section.subtitle }}</p>
+            {{ include.section.subtitle | markdownify }}
         </header>
         <section class="split">
             <article>
                 <h4>{{ include.section.left.title }}</h4>
-                <p>{{ include.section.left.text }}</p>
+                {{ include.section.left.text | markdownify }}
                 {% if include.section.left.link %}
                     <ul class="actions special">
                         <li><a href="{{ include.section.left.link | link | relative_url }}" class="button">Learn More</a></li>
@@ -17,7 +17,7 @@
             </article>
             <article>
                 <h4>{{ include.section.right.title }}</h4>
-                <p>{{ include.section.right.text }}</p>
+                {{ include.section.right.text | markdownify }}
                 {% if include.section.right.link %}
                     <ul class="actions special">
                         <li><a href="{{ include.section.right.link | link | relative_url }}" class="button">Learn More</a></li>

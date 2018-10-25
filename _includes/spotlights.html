@@ -3,17 +3,17 @@
     <div class="inner">
         <header class="major">
             <h2>{{ include.section.title }}</h2>
-            <p>{{ include.section.subtitle }}</p>
+            {{ include.section.subtitle | markdownify }}
         </header>
         <section class="spotlights">
-            {% assign arr = include.site.pages | where_exp: 'item', 'item.home_spotlights != nil' | sort: 'home_spotlights.weight' %}
+            {% assign arr = include.site.pages | where_exp: 'item', 'item.home_spotlights.eanbled == true' | sort: 'home_spotlights.weight' %}
             {% for page in arr %}
                 <section>
                     {% if page.content_img_path %}
                         <span class="image"><img src="{{ page.content_img_path | relative_url }}" alt="" /></span>
                     {% endif %}
                     <h4>{{ page.title }}</h4>
-                    <p>{{ page.home_spotlights.excerpt }}</p>
+                    {{ page.home_spotlights.excerpt | markdownify }}
                     <ul class="actions special">
                         <li><a href="{{ page.url | relative_url }}" class="button">Learn More</a></li>
                     </ul>
