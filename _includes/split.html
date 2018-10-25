@@ -1,0 +1,29 @@
+<!-- One -->
+<section id="{{ include.section.section_id }}" class="wrapper {{ include.section.section_background_style }} special">
+    <div class="inner">
+        <header class="major alt {{ include.section.header_background_style }}">
+            <h2>{{ include.section.title }}</h2>
+            <p>{{ include.section.subtitle }}</p>
+        </header>
+        <section class="split">
+            <article>
+                <h4>{{ include.section.left.title }}</h4>
+                <p>{{ include.section.left.text }}</p>
+                {% if include.section.left.link %}
+                    <ul class="actions special">
+                        <li><a href="{{ include.section.left.link | link | relative_url }}" class="button">Learn More</a></li>
+                    </ul>
+                {% endif %}
+            </article>
+            <article>
+                <h4>{{ include.section.right.title }}</h4>
+                <p>{{ include.section.right.text }}</p>
+                {% if include.section.right.link %}
+                    <ul class="actions special">
+                        <li><a href="{{ include.section.right.link | link | relative_url }}" class="button">Learn More</a></li>
+                    </ul>
+                {% endif %}
+            </article>
+        </section>
+    </div>
+</section>

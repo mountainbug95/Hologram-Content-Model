@@ -1,0 +1,14 @@
+<!-- Five -->
+<section id="{{ include.section.section_id }}" class="wrapper {{ include.section.background_style }} special alt">
+    <div class="inner">
+        <h4>{{ include.section.title }}</h4>
+        <p>{{ include.section.text }}</p>
+        {% if include.section.actions %}
+            <ul class="actions special">
+                {% for action in include.section.actions %}
+                    <li><a href="{% assign expr_1 = action.url | starts_with: '#' %}{% if expr_1 %}{{ action.url }}{% else %}{{ action.url | link | relative_url }}{% endif %}" class="button{% if action.is_primary %} primary{% endif %}{% if action.is_scrolly %} scrolly{% endif %}">{{ action.label }}</a></li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</section>

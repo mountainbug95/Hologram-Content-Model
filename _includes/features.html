@@ -1,0 +1,27 @@
+<!-- Three -->
+<section id="{{ include.section.section_id }}" class="wrapper {{ include.section.background_style }} special">
+    <div class="inner">
+        <header class="major">
+            <h2>{{ include.section.title }}</h2>
+            <p>{{ include.section.subtitle }}</p>
+        </header>
+        <section class="features">
+            {% for feature in include.section.features_list %}
+                <section>
+                    <span class="icon {{ feature.icon }} {{ feature.icon_style }}"></span>
+                    <h4>{{ feature.title }}</h4>
+                    <p>{{ feature.text }}</p>
+                </section>
+            {% endfor %}
+        </section>
+        {% if include.section.actions %}
+            <footer class="major">
+                <ul class="actions special">
+                    {% for action in include.section.actions %}
+                        <li><a href="{% assign expr_1 = action.url | starts_with: '#' %}{% if expr_1 %}{{ action.url }}{% else %}{{ action.url | link | relative_url }}{% endif %}" class="button{% if action.is_primary %} primary{% endif %}{% if action.is_scrolly %} scrolly{% endif %}">{{ action.label }}</a></li>
+                    {% endfor %}
+                </ul>
+            </footer>
+        {% endif %}
+    </div>
+</section>

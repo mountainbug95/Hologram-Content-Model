@@ -1,0 +1,11 @@
+---
+label: Page
+is_partial: false
+fields: []
+pages:
+  - contact_us.md
+  - etiam.md
+  - generic.md
+  - lacus.md
+  - privacy.md
+  - terms.md

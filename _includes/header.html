@@ -1,0 +1,7 @@
+<!-- Header -->
+<header id="header">
+    <a href="#menu">Menu</a>
+    {% for action in site.header.buttons %}
+        <a href="{% assign expr_1 = action.url | starts_with: '#' %}{% if expr_1 %}{{ action.url }}{% else %}{{ action.url | link | relative_url }}{% endif %}"{% if action.is_button %} class="button{% if action.is_primary %} primary{% endif %}"{% endif %}>{{ action.label }}</a>
+    {% endfor %}
+</header>
