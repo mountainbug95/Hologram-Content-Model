@@ -3,7 +3,7 @@ title: Lacus elementum
 content_img_path: images/pic02.jpg
 background_style: style1
 home_spotlights:
-  eanbled: true
+  enabled: true
   weight: 2
   excerpt: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet,

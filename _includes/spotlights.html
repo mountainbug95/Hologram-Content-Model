@@ -6,7 +6,7 @@
             {{ include.section.subtitle | markdownify }}
         </header>
         <section class="spotlights">
-            {% assign arr = include.site.pages | where_exp: 'item', 'item.home_spotlights.eanbled == true' | sort: 'home_spotlights.weight' %}
+            {% assign arr = include.site.pages | where_exp: 'item', 'item.home_spotlights.enabled == true' | sort: 'home_spotlights.weight' %}
             {% for page in arr %}
                 <section>
                     {% if page.content_img_path %}
