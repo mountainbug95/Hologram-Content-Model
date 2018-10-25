@@ -5,7 +5,7 @@
             <span class="icon {{ page.banner.icon }} style3"></span>
         {% endif %}
         <h1>{{ page.banner.title }}</h1>
-        <p>{{ page.banner.subtitle }}</p>
+        {{ page.banner.subtitle | markdownify }}
     </header>
     {% if page.banner.actions %}
         <ul class="actions special">
