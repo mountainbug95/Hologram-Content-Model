@@ -48,5 +48,12 @@ fields:
       - features
       - contact
       - generic_section
+  - type: text
+    name: template
+    label: Template
+    hidden: true
+    default: home
+    config:
+      required: true
 pages:
   - index.md

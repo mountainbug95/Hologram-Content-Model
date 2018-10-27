@@ -55,6 +55,13 @@ fields:
           wysiwyg: true
           schema:
             format: markdown
+  - type: text
+    name: template
+    label: Template
+    hidden: true
+    default: page
+    config:
+      required: true
 pages:
   - contact_us.md
   - etiam.md
