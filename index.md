@@ -32,13 +32,13 @@ sections:
         et elementum.
       link: generic.md
     component: split.html
-    widget: split
+    template: split
   - title: Convallis pretium
     subtitle: Lorem ipsum lacus adipiscing
     section_id: two
     background_style: style3
     component: spotlights.html
-    widget: spotlights
+    template: spotlights
   - title: Tempus feugiat
     subtitle: Ipsum sed elementum amet
     section_id: three
@@ -78,7 +78,7 @@ sections:
         is_primary: false
         is_scrolly: false
     component: features.html
-    widget: features
+    template: features
   - title: Amet lorem
     text: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet,
@@ -89,7 +89,7 @@ sections:
     section_id: four
     background_style: style4
     component: contact.html
-    widget: contact
+    template: contact
   - title: Magna feugiat lorem ipsum?
     text: >-
       Nulla imperdiet, lorem in pretium sed aliquet, lacus dui magna tristique
@@ -104,7 +104,7 @@ sections:
         is_scrolly: false
         is_primary: false
     component: generic_section.html
-    widget: generic_section
+    template: generic_section
 menus:
   main:
     title: Home

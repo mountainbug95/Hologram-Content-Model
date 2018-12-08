@@ -51,7 +51,7 @@ fields:
         fields:
           - type: include
             name: include_action
-            label: Include action
+            label: Action
             template: action
   - type: select
     name: palette
@@ -90,3 +90,35 @@ fields:
         name: copyright
         label: Footer Copyright
         description: The text displayed in the footer copyright section
+  - type: field_group
+    name: palettes
+    hidden: true
+    fields:
+      - type: field_group
+        name: blue
+        fields:
+          - type: field_group
+            name: sass
+            fields:
+              - type: text
+                name: accent2
+              - type: text
+                name: accent3_bg
+              - type: text
+                name: accent3_fg_light
+              - type: text
+                name: accent4
+      - type: field_group
+        name: purple
+        fields:
+          - type: field_group
+            name: sass
+            fields:
+              - type: text
+                name: accent2
+              - type: text
+                name: accent3_bg
+              - type: text
+                name: accent3_fg_light
+              - type: text
+                name: accent4

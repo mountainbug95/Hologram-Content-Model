@@ -36,7 +36,7 @@ fields:
         fields:
           - type: include
             name: include_action
-            label: Include action
+            label: Action
             template: action
   - type: blocks
     name: sections
@@ -49,8 +49,8 @@ fields:
       - contact
       - generic_section
   - type: text
-    name: template
-    label: Template
+    name: layout
+    label: Layout
     hidden: true
     default: home
     config:
