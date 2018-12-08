@@ -19,10 +19,9 @@ sections:
     create: all
     templates:
       - page
-  - type: directory
-    path: /
-    label: Elementss
-    create: all
+  - type: document
+    label: Elements
+    path: elements.md
     templates:
       - elements
 upload_dir: uploads

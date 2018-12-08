@@ -90,6 +90,7 @@ fields:
         label: Article URL
   - type: text
     name: component
+    label: Section Component
     hidden: true
     default: split.html
     config:
