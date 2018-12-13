@@ -123,6 +123,7 @@ collections:
           - name: palettes
             widget: hidden
             required: false
+            label: Palettes
   - name: home
     label: Home
     files:
@@ -268,6 +269,7 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: split.html
               - name: spotlights
                 widget: object
@@ -301,6 +303,7 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: spotlights.html
               - name: features
                 widget: object
@@ -392,6 +395,7 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: features.html
               - name: contact
                 widget: object
@@ -426,6 +430,7 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: contact.html
               - name: generic_section
                 widget: object
@@ -488,6 +493,7 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: generic_section.html
           - name: layout
             widget: hidden
@@ -561,26 +567,23 @@ collections:
         label: Content
         widget: markdown
   - name: elements
-    label: Elementss
-    folder: /
-    filter:
-      field: layout
-      value: elements
-    create: true
-    extension: md
-    slug: '{{slug}}'
-    fields:
-      - name: title
-        widget: string
-        required: true
-        label: Page Title
-      - name: subtitle
-        widget: markdown
-        required: false
-        label: Page Subtitle
-        hint: The text displayed below the page title
-      - name: layout
-        widget: hidden
-        required: true
-        label: Layout
-        default: elements
+    label: Elements
+    files:
+      - name: elements
+        label: Elements
+        file: elements.md
+        fields:
+          - name: title
+            widget: string
+            required: true
+            label: Page Title
+          - name: subtitle
+            widget: markdown
+            required: false
+            label: Page Subtitle
+            hint: The text displayed below the page title
+          - name: layout
+            widget: hidden
+            required: true
+            label: Layout
+            default: elements
